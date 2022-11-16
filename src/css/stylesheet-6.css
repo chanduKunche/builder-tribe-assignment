@@ -1,0 +1,152 @@
+
+/* -------coinDCX block-------- */
+
+.coindcx-content button {
+    border: none;
+    padding: 10px 100px;
+    color: #fff;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.coindcx-content h1:nth-child(1) {
+    font-size: 40px;
+}
+.coindcx-content h1:nth-child(2) {
+    font-size: 70px;
+}
+.coindcx-content .contentBx {
+    font-size: 23px;
+    width: 80%;
+    padding-top: 10px;
+    line-height: 1.5;
+}
+.coindcx-content .time-info {
+    padding-top: 15px;
+    font-size: 17px;
+    margin-left: 100px;
+}
+
+.coindcx-content .time-info i {
+    padding-right: 10px;
+    color: grey;
+}
+
+/* ---------rate division section--------- */ 
+
+.offers {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin: 20px 0px;
+}
+.offers h1 {
+    font-size: 30px;
+    color: rgb(120, 120, 120);
+    font-weight: 600;
+}
+.offers .offer {
+    width: 50%;
+    padding: 40px 80px;
+}
+.offers .offer:nth-child(1) {
+    border-right: 2px solid black;
+    border-image: linear-gradient(
+        to top,
+        black,
+        rgba(0,0,0,0)
+    )1 100%;
+    
+}
+.offers .rate {
+    font-size: 100px;
+    font-weight: 500;
+}
+.offers .offer #coin {
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: -5px;
+    color: #002244;
+}
+#coin span {
+    font-weight: 900;
+    letter-spacing: -13px;
+    color: tomato;
+}
+
+/*----------- Mentoring section---------- */
+
+.block-title {
+    text-align: center;
+    font-size: 30px;
+    color: rgb(120, 120, 120);
+}
+.parent-container-flex .view-content > * {
+    padding-bottom: 20px;
+}
+
+/* --------FAQs section------ */
+
+.QAs {
+    font-size: 20px;
+    color: black;
+    padding-bottom: 50px;
+}
+
+.QAs button {
+    border: none;
+    padding: 10px 100px;
+    color: #fff;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+#faq {
+    text-align: start; 
+    color: black; 
+    padding-bottom: 10px;
+}
+
+/*---- small screens----*/
+
+@media (max-width: 375px) {
+    .coindcx-content {
+        text-align: center;
+    }
+    .coindcx-content .contentBx {
+        width: 100%;
+    }
+    .coindcx-content .time-info {
+        margin-left: 0px;
+    }
+    .offers {
+        display: flex;
+        flex-direction: column;
+    }
+    .offers .offer {
+        width: 100%;
+        padding: 40px 10px;
+    }
+    .offers .offer:nth-child(1) {
+        border-right: 0px;
+        border-bottom: 2px solid black;
+        border-image: linear-gradient(
+            to top,
+            black,
+            rgba(0,0,0,0)
+        )1 100%;
+    }
+    .parent-container-flex .view-content {
+        display: grid;
+        grid-template-columns: auto;
+        place-items: center;
+        box-sizing: border-box;
+    }
+    .QAs {
+       text-align: center;
+    }
+    .view-content button {
+        margin: 20px auto;
+    }
+    #faq {
+        text-align: center;
+    }
+}
